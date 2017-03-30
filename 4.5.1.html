@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Accessing numbers in table</title>
+<script type="text/javascript">
+window.onload =  function(){
+var d = document.getElementById("table1");
+var q = document.querySelector(" td + td "); // holds all values apples 20 oranges 30 mangoes 40
+//document.write(q.length); //outputs 3 (because we have 3 rows)
+
+var sum = 0;
+for(var i = 0; i < q.length ; i++)
+{
+sum += parseFloat(q[i].firstChild.data);
+//document.write(parseFloat(q[i].firstChild.data));
+//document.write("<br>");
+}
+//to display newvalue will create newRow
+var newRow = document.createElement("tr");
+var firstCell = document.createElement("td");
+var firstTextCell = document.createTextNode("Total" + "  ");
+firstCell.appendChild(firstTextCell);
+newRow.appendChild(firstTextCell);
+
+
+var secondCell = document.createElement("td");
+var secondTextCell = document.createTextNode(sum);
+secondCell.appendChild(secondTextCell);
+newRow.appendChild(secondTextCell);
+d.appendChild(newRow);
+
+}
+
+
+</script>
+</head>
+<body>
+	<table id = "table1">
+		<tr>
+			<td>Apples</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Oranges</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Mangoes</td>
+			<td>40</td>
+		</tr>
+	</table>
+</body>
+</html>

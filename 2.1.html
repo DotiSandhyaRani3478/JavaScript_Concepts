@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>test</title>
+	<script type="text/javascript">
+	var str = "I am a graduate student and my friend is also a graduate student";
+	//1 pattern matching
+	var pattern = /graduate * student/;
+	alert(pattern.test(str));
+	
+	//2 
+	var p1 = /^I\s/;
+	document.write(p1.test(str));
+	
+	//3 pattern matching ignore case use 'i
+	var str1 = "I am a graduate student and my friend is also a GrAduate student";
+	var p2 = /graduate/i;
+	document.write(p2.test(str1));
+	</script>
+</head>
+	<body>
+		<p>Hello!! How are you doing</p>
+	</body>
+
+</html>
+
+
+
+
+
+
+

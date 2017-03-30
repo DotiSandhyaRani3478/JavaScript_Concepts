@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Create a New Array as a Subset of an Existing Array </title>
+	<type="text/javascript">
+	<script type="text/javascript">
+	var a = new Array(4);
+	a[0] = new Array("one", "two");
+	a[1] = new Array("three", "four");
+	a[2] = new Array("five", "six");
+	a[3] = new Array("seven", "eight");
+document.write(a);
+document.write("<br>");
+document.write(a.slice(1,3));
+//modifying array element
+
+a[0][0] = "sandhya";
+a[3][1] = "rani";
+document.write("<br>" + "Modified array ");
+document.write(a);
+</script>
+</head>
+<body>
+
+</body>
+</html>

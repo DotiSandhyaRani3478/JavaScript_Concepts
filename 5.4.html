@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Creating a String from an Array</title>
+<script type="text/javascript">
+//1 sorting words
+var a = new Array("mangoes","zebra","kiwi");
+document.write(a.sort());
+//2 sorting numbers -->Javascript sorts everything by converting it t0 strings so it wont sort numbers directly we need to have custom sort function
+var n = new Array(11,33,2,1,45);
+//document.write(n.sort());
+function compareNumbers(a,b) {
+return a - b;
+}
+var numArray = [13,2,31,4,5];
+document.write(numArray.sort(compareNumbers));
+
+//reverse elemenets using reverse()
+document.write("<br>");
+document.write(numArray.reverse());
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Arrays Intial Concepts</title>
+<script type="text/javascript">
+//1
+var newArray = new Array("v1","v2");
+var newLiteral = ["v1","v2"];
+document.write(newArray);
+document.write("<br>");
+document.write(newLiteral);
+
+function changeArray(arr){
+	arr[0] = "sandhya";
+}
+
+changeArray(newArray);
+changeArray(newLiteral);
+alert(newArray);
+document.write("<br>");
+alert(newLiteral);
+var arrObj = new Array("val1",34,true);
+var arrLiteral = [arrObj,"val2",18,false];
+document.write(arrObj);
+document.write("<br>");
+document.write(arrLiteral);
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

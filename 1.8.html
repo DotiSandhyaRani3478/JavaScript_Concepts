@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Inserting special characters</title>
+	<script type="text/javascript">
+	//insert $ before the number
+	var str = "The bag costs 1456.00 and 5.00 off";
+ 	var res = str.split(" ");
+ 	for (var i = 0; i < res.length; i++) {
+ 		if(/^[0-9]/.test(res[i])){
+ 			var s = "$" + res[i];
+			document.write(s);
+			document.write(" ");
+		}
+		else
+		{
+			document.write(res[i]);
+			document.write(" ");
+		}
+	};
+	</script>
+</head>
+	<body>
+		<p>Hello!! How are you doing</p>
+	</body>
+
+</html>
+
+

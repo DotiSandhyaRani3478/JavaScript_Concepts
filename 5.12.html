@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>Applying a Function Against each array element</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script>
+
+function convertToHex(element,index,array){
+	return element.toString(16);
+}
+var a = new Array(23,255,122);
+var hexArray = a.map(convertToHex);
+
+alert(hexArray);
+
+</script>
+</head>
+<body>
+</body>
+</html>

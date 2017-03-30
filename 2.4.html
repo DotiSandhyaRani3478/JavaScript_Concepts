@@ -1,0 +1,22 @@
+
+<html>
+<head>
+	<title>Inserting special characters</title>
+	<script type="text/javascript">
+	var searchString = "Now is the time and this is the time and that is the time";
+	//the word that ends with e;
+	var pattern = /t\w*e/g;
+	var matchArray;
+	var str = "";
+	while((matchArray = pattern.exec(searchString)) != null) {
+	str+="at " + matchArray.index + " we found " + matchArray[0] + "<br />";
+	}
+//document.getElementById("results").innerHTML=str;
+document.write(str);
+</script>
+</head>
+	<body>
+		<p>Hello!! How are you doing</p>
+	</body>
+
+</html>

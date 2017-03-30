@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>Applying a Function Against each array element</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script>
+
+var charSets = new Array("ab","bb","cd","ab","cc","ab","dd","ab");
+function replaceElement(element,index,array) {
+if (element == "ab") array[index] = "**";
+}
+// apply function to each array element
+charSets.forEach(replaceElement);
+alert(charSets); // prints **,bb,cd,**,cc,**,dd,**
+document.write(a);
+</script>
+</head>
+<body>
+</body>
+</html>

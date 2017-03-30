@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Generate Random Colors</title>
+	<script type="text/javascript">
+	
+function randomValue(val){
+		return Math.floor(Math.random() * val);
+	}
+	function randomColor(){
+		return "rgb(" + randomValue(255) + "," + randomValue(255) + ", " + randomValue(255) + ")";
+	}
+
+//Using hexadecimal notation
+fucntion randomColor(){
+	var r = randomValue(255).toString(16);
+	var g = randomValue(255).toString(16);
+	var b = randomValue(255).toString(16);
+	return "#" + r + g + b;  //hexadecimal notation #ffff
+
+}
+
+
+	</script>
+</head>
+	<body>
+		<p>Hello!! How are you doing</p>
+	</body>
+
+</html>
+
+

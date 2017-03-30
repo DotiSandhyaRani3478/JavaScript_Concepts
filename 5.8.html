@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Searching Through an Array </title>
+	<type="text/javascript">
+	<script type="text/javascript">
+	var a = new Array(43,34,67,89,12);
+	alert(a.indexOf(22));
+	//2 Flatten multidimensional array
+	var origArray = new Array();
+origArray[0] = new Array("one","two");
+origArray[1] = new Array("three","four");
+origArray[2] = new Array("five","six");
+origArray[3] = new Array("seven","eight");
+// flatten array
+var newArray = origArray[0].concat(origArray[1],origArray[2],origArray[3]);
+alert(newArray[5]); // prints six
+
+
+
+	</script>
+	</head>
+<body>
+
+</body>
+</html>
